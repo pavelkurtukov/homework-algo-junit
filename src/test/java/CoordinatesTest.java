@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -9,7 +9,8 @@ import java.util.stream.Stream;
 class CoordinatesTest {
 
     @ParameterizedTest
-    @MethodSource("Тест сравнения эквивалентности координат")
+    @MethodSource("testEqualsParams")
+    @DisplayName("Тест сравнения эквивалентности координат")
     public void testEqualsWithParams(int x1, int y1, int x2, int y2, boolean expectedResult) {
         Coordinates c1 = new Coordinates(x1, y1);
         Coordinates c2 = new Coordinates(x2, y2);

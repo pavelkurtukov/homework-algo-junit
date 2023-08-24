@@ -1,11 +1,11 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class NationalTeamTest {
 
     @Test
+    @DisplayName("Тест слияния массивов с ограничением")
     void merge() {
         // Массивы array1 и array2 должны быть отсортированы по убыванию
         int[] array1 = {17, 9, 8, 7, 1, 0};
