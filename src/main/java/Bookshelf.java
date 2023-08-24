@@ -16,7 +16,7 @@ public class Bookshelf {
     }
 
     // Поиск в массиве arr кол-во элементов, больших, чем elem
-    private static int getLargerBooksCount(int[] arr, int elem) {
+    public static int getLargerBooksCount(int[] arr, int elem) {
         int left = 0;
         int right = arr.length - 1;
         int largerCount = 0;
